@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JustHome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт компанії надання в оренду офісних приміщень">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оренда Офісу</h2>
+            <p>Заповніть форму, щоб орендувати офіс. Наш менеджер зв'яжеться з вами найближчим часом!</p>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <textarea placeholder="Додаткова інформація" rows="4"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <button id="closeModal" class="close-modal-btn">Закрити</button>
+        </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-white.png" alt="JustHome">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="properties.html">Приміщення</a>
+            <a href="#">Команда</a>
+            <a href="#">Блог</a>
+            <a href="#">Сторінки</a>
+            <a href="notfound.html">Контакти</a>
+        </nav>
+        <div class="contact">
+            <a href="#" class="phone"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                +68 685 8866</a>
+            <a href="#"><i class="fa-regular fa-user user-icon" style="color: #ffffff;"></i></a>
+            <a href="#" class="add-property" id="openModal">Орендувати</a>
+        </div>
+    </header>
+    <section class="page-title">
+        <h1>Блог</h1>
+    </section>
+    <section class="properties-section blog">
+        <h2 class="section-title">Останні статті та новини</h2>
+        <p class="section-subtitle">Читайте наш блок та дізнавайтесь новини</p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/card6.png" alt="Apartment">
+                <div class="card-content">
+                    <p>Квартира &#8226; 19 березня 2024р</p>
+                    <h3>Ринки житла, які найбільше змінилися цього тижня</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card7.png" alt="Apartment">
+                <div class="card-content">
+                    <p>Офіс &#8226; 19 березня 2024р</p>
+                    <h3>Read розкриває найкращі канадські міста для офісів</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card8.png" alt="Office">
+                <div class="card-content">
+                    <p>Офіс &#8226; 19 березня 2024р</p>
+                    <h3>10 зручних міст, де можна відкрити офіс доступно</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card9.png" alt="Shop">
+                <div class="card-content">
+                    <p>Квартира  &#8226; 19 березня 2024р</p>
+                    <h3>Нова квартира Nice в найкращих містах Канади</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/office-design-1.jpg" alt="Office Space">
+                <div class="card-content">
+                    <p>Офіс &#8226; 20 березня 2024р</p>
+                    <h3>5 ключових моментів, які слід враховувати під час оренди офісу</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/office-design-2.jpg" alt="Workplace Trends">
+                <div class="card-content">
+                    <p>Офіс &#8226; 20 березня 2024р</p>
+                    <h3>Як обрати офіс з трендовим дизайном для своєї команди</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/office-design-3.jpg" alt="Office Budget">
+                <div class="card-content">
+                    <p>Офіс &#8226; 21 березня 2024р</p>
+                    <h3>Поради щодо зменшення витрат на оренду офісних приміщень</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Link1.png" alt="Office Culture">
+                <div class="card-content">
+                    <p>Культура &#8226; 22 березня 2024р</p>
+                    <h3>Як офісний простір впливає на продуктивність співробітників</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Link2.png" alt="Green Office">
+                <div class="card-content">
+                    <p>Екологія &#8226; 23 березня 2024р</p>
+                    <h3>Найкращі "зелені" офіси для вашого бізнесу</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Link3.png" alt="Office Location">
+                <div class="card-content">
+                    <p>Офіс &#8226; 24 березня 2024р</p>
+                    <h3>Чому локація офісу є ключовим фактором для успіху бізнесу</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Link4.png" alt="Startup Office">
+                <div class="card-content">
+                    <p>Стартапи &#8226; 25 березня 2024р</p>
+                    <h3>Найкращі офіси для стартапів: як знайти свій простір</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Link5.png" alt="Shared Space">
+                <div class="card-content">
+                    <p>Коворкінг &#8226; 26 березня 2024р</p>
+                    <h3>Чи варто вибирати коворкінг замість традиційного офісу?</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter-icon">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h2>Будьте в курсі подій</h2>
+            <p>Підпишіться на нашу розсилку, щоб отримувати нашу щотижневу стрічку.</p>
+            <form class="email-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Надіслати <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024. JustHome</p>
+            <div class="logo">
+                <img src="img/logo.png" alt="img">
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

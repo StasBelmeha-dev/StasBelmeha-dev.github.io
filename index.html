@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JustHome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт компанії надання в оренду офісних приміщень">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оренда Офісу</h2>
+            <p>Заповніть форму, щоб орендувати офіс. Наш менеджер зв'яжеться з вами найближчим часом!</p>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <textarea placeholder="Додаткова інформація" rows="4"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <button id="closeModal" class="close-modal-btn">Закрити</button>
+        </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo-white.png" alt="JustHome">
+        </a>
+        <nav class="nav">
+            <a href="#">Головна</a>
+            <a href="properties.html">Приміщення</a>
+            <a href="#">Команда</a>
+            <a href="blog.html">Блог</a>
+            <a href="#">Сторінки</a>
+            <a href="notfound.html">Контакти</a>
+        </nav>
+        <div class="contact">
+            <a href="#" class="phone"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                +68 685 8866</a>
+            <a href="#"><i class="fa-regular fa-user user-icon" style="color: #ffffff;"></i></a>
+            <a href="#" class="add-property" id="openModal">Орендувати</a>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="info">
+            <div class="details">
+                <p>5 Ліжок</p>
+                <p>2 Ванни</p>
+                <p>180 кв/м</p>
+            </div>
+            <h1>Офісні приміщення на Північному-Заході</h1>
+            <p class="price">$250 <span>/місяць</span></p>
+            <a href="#" class="cta">Переглянути деталі <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="filter-bar">
+            <div>
+                <p>Ключове слово</p>
+                <input type="text" placeholder="Пошук">
+            </div>
+            <hr class="line-h">
+            <div>
+                <p>Статус</p>
+                <select>
+                    <option>Всі статуси</option>
+                </select>
+            </div>
+            <hr class="line-h">
+            <div>
+                <p>Тип</p>
+                <select>
+                    <option>Всі типи</option>
+                </select>
+            </div>
+            <a href="#" class="filter-btn"><i class="fa-solid fa-arrow-down-short-wide"></i>Фільтри</a>
+            <a href="#" class="search-btn">Пошук</a>
+        </div>
+    </section>
+    <section class="properties-section">
+        <h2 class="section-title">Знайдіть нерухомість у цих містах</h2>
+        <p class="section-subtitle">Обирайте найближче до вас місто та орендуйте вибраний офіс</p>
+        <div class="properties-grid">
+            <div class="property-card" style="background: url('img/card1.png')">
+                <h3 class="property-card-title">Нью-Йорк</h3>
+                <p class="property-card-details">8 Нерухомостей</p>
+            </div>
+            <div class="property-card" style="background: url('img/card2.png')">
+                <h3 class="property-card-title">Чикаго</h3>
+                <p class="property-card-details">2 Нерухомості</p>
+            </div>
+            <div class="property-card" style="background: url('img/card3.png')">
+                <h3 class="property-card-title">Лос-Анджелес</h3>
+                <p class="property-card-details">1 Нерухомість</p>
+            </div>
+            <div class="property-card" style="background: url('img/card4.png')">
+                <h3 class="property-card-title">Маямі</h3>
+                <p class="property-card-details">2 Нерухомості</p>
+            </div>
+            <div class="property-card" style="background: url('img/card5.png')">
+                <h3 class="property-card-title">Флорида</h3>
+                <p class="property-card-details">3 Нерухомості</p>
+            </div>
+        </div>
+    </section>
+    <section class="choose-section">
+        <h2 class="section-title">Чому вам варто працювати з нами</h2>
+        <p class="section-subtitle">Ми створюємо можливості для комфортного офісу</p>
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-sheet-plastic"></i>
+                <h3>Широкий спектр властивостей</h3>
+                <p>Ми пропонуємо експертну юридичну допомогу щодо всіх пов’язаних об’єктів нерухомості.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-house"></i>
+                <h3>Купити або орендувати будинки</h3>
+                <p>Ми продаємо ваш будинок за найкращою ринковою ціною та дуже швидко.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-shield"></i>
+                <h3>Довіряють тисячі</h3>
+                <p>Ми пропонуємо вам безкоштовну консультацію щодо отримання кредиту на нове житло.</p>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Увійдіть, щоб спростити пошук</h2>
+                <p>Зберігайте властивості, створюйте сповіщення та відстежуйте запити, які ви надсилаєте.</p>
+            </div>
+            <a href="#" class="banner-button">Увійдіть або створіть обліковий запис <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="choose-section">
+        <h2 class="section-title">Рекомендовані нерухомості</h2>
+        <p class="section-subtitle">Найчастіше обирають наші клієнти</p>
+        <div class="filters-two">
+            <span class="active">Всі нерухомості</span>
+            <span>Офіси</span>
+            <span>Апартаменти</span>
+            <span>Вілла</span>
+        </div>
+        <div class="card-wrap">
+            <div class="office-card" style="background: url('img/Link1.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Розкішний сімейний офіс</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>1800-1818 79 вулиця</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-cube"></i> 400</span>
+                        </div>
+                        <div class="price">$395,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link2.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                </div>
+                <div class="details-two">
+                    <h3>Skyper Офіс біля басейну</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>1020 Болумі авеню</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 450</span>
+                        </div>
+                        <div class="price">$280,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link3.png')">
+                <div class="tags">
+                    <span class="for-sale">Оренда</span>
+                </div>
+                <div class="details-two">
+                    <h3>Норт Діллард Стріт</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>4330 Дзвінкова</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 400</span>
+                        </div>
+                        <div class="price">$250<span>/місяць</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link4.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Пентхаус Eaton Garth</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 7722 18-а авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 450</span>
+                        </div>
+                        <div class="price">$180,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link5.png')">
+                <div class="tags">
+                    <span class="for-sale">Оренда</span>
+                </div>
+                <div class="details-two">
+                    <h3>Новий Офіс Гарний Вид</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>42 Авеню O, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-cube"></i> 460</span>
+                        </div>
+                        <div class="price">$850<span>/місяць</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link6.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Офіс Diamond Manor</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>7802 20 Авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 500</span>
+                        </div>
+                        <div class="price">$259,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn-all">Дивитися Все<i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+    <section class="hero-section" style="background: url('img/item2.png') no-repeat center / cover">
+        <div class="info">
+            <h2>Відкрийте для себе місце, де вам сподобається жити</h2>
+            <p class="price">Обирай офіс та орендуй його на скільки потрібно.</p>
+            <a href="#" class="cta">Переглянути Нерухомість <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <section class="real-estate">
+        <div class="container">
+            <div class="text">
+                <h2 class="section-title">Ми використовуємо нерухомість, щоб показати свою вдячність світу</h2>
+                <p class="section-subtitle">Розвиваємо простір, створюючи унікальні можливості для
+                    інвестування, життя та процвітання, які надихають і залишають значущий слід у
+                    кожному куточку світу.</p>
+                <div class="stats">
+                    <div>
+                        <div class="stat">
+                            <h3 class="value">$18M</h3>
+                            <p class="label">У власності нерухомістю</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="value">26K+</h3>
+                            <p class="label">Нерухомість для купівлі</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stat">
+                            <h3 class="value">15K+</h3>
+                            <p class="label">Нерухомість для продажу</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="value">890</h3>
+                            <p class="label">Щоденні завершені транзакції</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="cta">Дізнатися більше<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="image">
+                <img src="img/item3.png" alt="Modern house with greenery" class="photo">
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">Що нам говорять клієнти?</h2>
+                <div class="testimonials-stats">
+                    <div>
+                        <h3 class="stat-value">10м+</h3>
+                        <p class="stat-label">Щасливі люди</p>
+                    </div>
+                    <div>
+                        <h3 class="stat-value">4.88</h3>
+                        <p class="stat-label">Загальна оцінка</p>
+                        <div class="rating-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <div class="comment">
+                        <div>
+                            <img src="img/test1.png" alt="img">
+                            <h4 class="testimonial-author">
+                                Кемерон Вільямсон
+                            <span class="testimonial-role">Дизайнер</span>
+                            </h4>
+                        </div>
+                        <img src="img/test2.png" alt="img">
+                    </div>
+                    <p class="testimonial-quote">Чудовий сервіс для пошуку офісних приміщень!
+                        Зручний інтерфейс, просте порівняння об'єктів та швидкий доступ до всієї
+                        необхідної інформації. Дуже задоволений результатами.</p>
+                </div>
+                <div class="testimonial-controls">
+                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="trust-companies">
+            <p>Тисячі провідних компаній світу довіряють нам</p>
+            <div class="companies-logos">
+                <img src="img/brand1.png" alt="Amazon logo">
+                <img src="img/brand2.png" alt="AMD logo">
+                <img src="img/brand3.png" alt="Cisco logo">
+                <img src="img/brand4.png" alt="Dropcam logo">
+                <img src="img/brand5.png" alt="Logitech logo">
+                <img src="img/brand6.png" alt="Spotify logo">
+            </div>
+        </div>
+    </section>
+    <section class="properties-section">
+        <h2 class="section-title">Останні статті та новини</h2>
+        <p class="section-subtitle">Читайте наш блок та дізнавайтесь новини</p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/card6.png" alt="Apartment">
+                <div class="card-content">
+                    <p>Квартира &#8226; 19 березня 2024р</p>
+                    <h3>Ринки житла, які найбільше змінилися цього тижня</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card7.png" alt="Apartment">
+                <div class="card-content">
+                    <p>Офіс &#8226; 19 березня 2024р</p>
+                    <h3>Read розкриває найкращі канадські міста для офісів</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card8.png" alt="Office">
+                <div class="card-content">
+                    <p>Офіс &#8226; 19 березня 2024р</p>
+                    <h3>10 зручних міст, де можна відкрити офіс доступно</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/card9.png" alt="Shop">
+                <div class="card-content">
+                    <p>Квартира  &#8226; 19 березня 2024р</p>
+                    <h3>Нова квартира Nice в найкращих містах Канади</h3>
+                    <a href="#">Читати більше <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="download-app">
+        <div class="text-content">
+            <p class="cta-text">Почніть сьогодні</p>
+            <h2>Завантажте додаток</h2>
+            <p>Проходьте заняття на ходу за допомогою програми just home.
+                Транслюйте або завантажуйте, щоб дивитися в літаку, метро
+                або будь-де, де вам найкраще навчитися.</p>
+            <div class="store-buttons">
+                <a href="#"><i class="fa-brands fa-apple"></i>
+                    <div>
+                        Завантажити на
+                        <span>Apple Store</span>
+                    </div>
+                </a>
+                <a href="#"><i class="fa-brands fa-google-play"></i>
+                    <div>
+                        Завантажити на
+                        <span>Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="img/item4.png" alt="Person holding a phone">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter-icon">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h2>Будьте в курсі подій</h2>
+            <p>Підпишіться на нашу розсилку, щоб отримувати нашу щотижневу стрічку.</p>
+            <form class="email-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Надіслати <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024. JustHome</p>
+            <div class="logo">
+                <img src="img/logo.png" alt="img">
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

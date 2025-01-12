@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JustHome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт компанії надання в оренду офісних приміщень">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оренда Офісу</h2>
+            <p>Заповніть форму, щоб орендувати офіс. Наш менеджер зв'яжеться з вами найближчим часом!</p>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <textarea placeholder="Додаткова інформація" rows="4"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <button id="closeModal" class="close-modal-btn">Закрити</button>
+        </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-white.png" alt="JustHome">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="#">Приміщення</a>
+            <a href="#">Команда</a>
+            <a href="blog.html">Блог</a>
+            <a href="#">Сторінки</a>
+            <a href="notfound.html">Контакти</a>
+        </nav>
+        <div class="contact">
+            <a href="#" class="phone"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                +68 685 8866</a>
+            <a href="#"><i class="fa-regular fa-user user-icon" style="color: #ffffff;"></i></a>
+            <a href="#" class="add-property" id="openModal">Орендувати</a>
+        </div>
+    </header>
+    <section class="page-title">
+        <h1>Нерухомість</h1>
+    </section>
+    <section class="choose-section">
+        <h2 class="section-title">Рекомендовані нерухомості</h2>
+        <p class="section-subtitle">Найчастіше обирають наші клієнти</p>
+        <div class="filters-two">
+            <span class="active">Всі нерухомості</span>
+            <span>Офіси</span>
+            <span>Апартаменти</span>
+            <span>Вілла</span>
+        </div>
+        <div class="card-wrap">
+            <div class="office-card" style="background: url('img/Link1.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Розкішний сімейний офіс</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>1800-1818 79 вулиця</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-cube"></i> 400</span>
+                        </div>
+                        <div class="price">$395,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link2.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                </div>
+                <div class="details-two">
+                    <h3>Skyper Офіс біля басейну</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>1020 Болумі авеню</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 450</span>
+                        </div>
+                        <div class="price">$280,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link3.png')">
+                <div class="tags">
+                    <span class="for-sale">Оренда</span>
+                </div>
+                <div class="details-two">
+                    <h3>Норт Діллард Стріт</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>4330 Дзвінкова</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 400</span>
+                        </div>
+                        <div class="price">$250<span>/місяць</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link4.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Пентхаус Eaton Garth</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> 7722 18-а авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 450</span>
+                        </div>
+                        <div class="price">$180,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link5.png')">
+                <div class="tags">
+                    <span class="for-sale">Оренда</span>
+                </div>
+                <div class="details-two">
+                    <h3>Новий Офіс Гарний Вид</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>42 Авеню O, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-cube"></i> 460</span>
+                        </div>
+                        <div class="price">$850<span>/місяць</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/Link6.png')">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Офіс Diamond Manor</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>7802 20 Авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 500</span>
+                        </div>
+                        <div class="price">$259,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/office-design-3.jpg') center / cover">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Офіс Black Luxe</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>7809, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 3</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 600</span>
+                        </div>
+                        <div class="price">$300,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/office-design-2.jpg') center / cover">
+                <div class="tags">
+                    <span class="for-sale">Оренда</span>
+                    <span class="featured">Популярні</span>
+                </div>
+                <div class="details-two">
+                    <h3>Офіс Epam</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>4556 28 Авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 4</span>
+                            <span><i class="fa-solid fa-bath"></i> 2</span>
+                            <span><i class="fa-solid fa-cube"></i> 550</span>
+                        </div>
+                        <div class="price">$730<span>/місяць</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="office-card" style="background: url('img/office-design-1.jpg') center / cover">
+                <div class="tags">
+                    <span class="for-sale">Продається</span>
+                </div>
+                <div class="details-two">
+                    <h3>Офіс IT-logic</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>90 Авеню, Бруклін</p>
+                    <div class="info-two">
+                        <div>
+                            <span><i class="fa-solid fa-bed"></i> 3</span>
+                            <span><i class="fa-solid fa-bath"></i> 1</span>
+                            <span><i class="fa-solid fa-cube"></i> 700</span>
+                        </div>
+                        <div class="price">$286,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter-icon">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h2>Будьте в курсі подій</h2>
+            <p>Підпишіться на нашу розсилку, щоб отримувати нашу щотижневу стрічку.</p>
+            <form class="email-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Надіслати <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024. JustHome</p>
+            <div class="logo">
+                <img src="img/logo.png" alt="img">
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

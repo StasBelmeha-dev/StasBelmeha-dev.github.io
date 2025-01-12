@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JustHome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Сайт компанії надання в оренду офісних приміщень">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Оренда Офісу</h2>
+            <p>Заповніть форму, щоб орендувати офіс. Наш менеджер зв'яжеться з вами найближчим часом!</p>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <textarea placeholder="Додаткова інформація" rows="4"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+            <button id="closeModal" class="close-modal-btn">Закрити</button>
+        </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></div>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-white.png" alt="JustHome">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="properties.html">Приміщення</a>
+            <a href="#">Команда</a>
+            <a href="blog.html">Блог</a>
+            <a href="#">Сторінки</a>
+            <a href="#">Контакти</a>
+        </nav>
+        <div class="contact">
+            <a href="#" class="phone"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                +68 685 8866</a>
+            <a href="#"><i class="fa-regular fa-user user-icon" style="color: #ffffff;"></i></a>
+            <a href="#" class="add-property" id="openModal">Орендувати</a>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="info">
+            <h1>Помилка 404</h1>
+            <p class="price">Сторінку не знайдено</p>
+            <a href="index.html" class="cta">Головна <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="newsletter">
+            <div class="newsletter-icon">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h2>Будьте в курсі подій</h2>
+            <p>Підпишіться на нашу розсилку, щоб отримувати нашу щотижневу стрічку.</p>
+            <form class="email-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Надіслати <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024. JustHome</p>
+            <div class="logo">
+                <img src="img/logo.png" alt="img">
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
